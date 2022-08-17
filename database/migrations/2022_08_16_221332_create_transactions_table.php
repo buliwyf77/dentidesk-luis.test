@@ -20,7 +20,7 @@ class CreateTransactionsTable extends Migration
             $table->date('fech_transaction');
             $table->double('amount', 12, 2); 
             $table->integer('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
+//            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
